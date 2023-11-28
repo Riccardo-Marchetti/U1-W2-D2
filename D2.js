@@ -73,7 +73,6 @@ console.log(" il totale da addebitare è: " + totalcheckouts);
 const a = 6;
 const b = 9;
 const c = 17;
-let first;
 if (c > a && c > b) {
   if (b > a);
 }
