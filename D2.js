@@ -27,10 +27,10 @@ if (d === 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let e = 10;
+let e = 45;
 let f = 5;
-if (e / 5) {
-  console.log("è divisibile");
+if (e % 5 === 0) {
+  console.log("è divisibile per 5");
 } else {
   console.log("non è divisibile");
 }
