@@ -40,11 +40,9 @@ if (e % 5 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let g = 12;
-let h = 4;
-if (g - h === 8) {
-  console.log("è uguale a 8");
-} else {
-  console.log("non è uguale a 8");
+let h = 21;
+if (g === 8 || h === 8 || g + h === 8 || g - h === 8 || h - g === 8) {
+  console.log("verificato!");
 }
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -60,7 +58,7 @@ if (totalShoppingCart > 50) {
 }
 let totalcheckout = 0;
 totalcheckout = totalShoppingCart + shippingcost;
-console.log(" il totale da addebitare è: " + totalcheckout);
+console.log(" il totale da addebitare è: ", totalcheckout);
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -77,7 +75,7 @@ if (totalShoppingCarts > 50) {
 }
 let totalcheckouts = 0;
 totalcheckouts = totalShoppingCarts - isTodayBlackFriday + shippingcosts;
-console.log(" il totale da addebitare è: " + totalcheckouts);
+console.log(" il totale da addebitare è: ", totalcheckouts);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -86,23 +84,39 @@ console.log(" il totale da addebitare è: " + totalcheckouts);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const a = 6;
-const b = 9;
-const c = 17;
-if (c > a && c > b) {
-  if (b > a);
+const Num1 = 3;
+const Num2 = 4;
+const Num3 = 5;
+if (Num1 >= num2 && Num1 >= Num3) {
+  if (Num2 >= Num3) {
+    console.log(Num1, Num2, Num3);
+  } else {
+    console.log(Num1, Num3, Num2);
+  }
+} else if (Num2 >= Num1 && Num2 >= Num3) {
+  if (Num1 >= Num3) {
+    console.log(Num2, Num1, Num3);
+  } else {
+    console.log(Num2, Num3, Num1);
+  }
+} else if (Num3 >= Num1 && Num3 >= Num2) {
+  if (Num1 >= Num2) {
+    console.log(Num3, Num1, Num2);
+  } else {
+    console.log(Num3, Num2, Num1);
+  }
 }
-console.log(c, b, a);
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function isNumber(value) {
-  return typeof value === "number";
+const z = "cadrega";
+if (typeof z === "number") {
+  console.log("z è un numero!");
 }
-console.log(isNumber(3));
-console.log(isNumber("ciao"));
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
